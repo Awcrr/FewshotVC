@@ -8,19 +8,19 @@ The following libaries are necessary:
 [SciPy](https://www.scipy.org/) >= 1.0.0   
  
 ## Training   
-* Data    
+* __Data__    
 We use Mini-ImageNet as our benchmark. So at first, you need to download images from [ImageNet](http://www.image-net.org/) according to the splits in the `miniimagenet-csv` directory. Please note that all the splits are adopted from [Ravi & Larochelle](https://openreview.net/forum?id=rJY0-Kcll).
 
-* Pre-trained CNN   
+* __Pre-trained CNN__   
 This repo is for the few-shot learning based on a pre-trained ordinary CNN. Thus, to carry out few-shot training you need to prepare a CNN which is trained on the training split of Mini-ImageNet.
 
-* Hyper Settings   
+* __Hyper Settings__   
 Basically, we use `argparse` to manage the hyper settings. You can see all the options by `python main.py -h`.
 
-* Models   
+* __Models__   
 As our paper presented, there are two models for few-shot learning. One is *Nearest Neighbor on VC-Encodings* (denoted as `NN` in this repo). The other is *Factorizable Likelihood Model* (denoted as `Likelihood` in this repo). You can choose either of these two by setting the `-model` option.
 
-* Sample running script   
+* __Sample running script__   
 Though you can `python main.py --with_all_the_settings_you_want`,  we also provide a sample running script (please see the `run.sh`). You can first change all the `Path_to_*` options to your paths. Then, just run it!
 
 ## Contact    
