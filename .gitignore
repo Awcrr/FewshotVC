@@ -1,0 +1,11 @@
+.DS_Store
+*.pyc
+*.swp
+data/
+checkpoints/
+cluster_run.sh
+srun.sh
+server_run.sh
+record.npy
+history*/
+*.pth
