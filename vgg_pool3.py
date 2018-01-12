@@ -7,8 +7,8 @@ import torch.nn as nn
 class VGGPool3(nn.Module):
     def __init__(self, layers):
         super(VGGPool3, self).__init__()
-        self.features = nn.Sequential(*layers)
+        self.pool3 = nn.Sequential(*layers)
 
     def forward(self, x):
-        x = self.features(x)
+        x = self.pool3(x)
         return x

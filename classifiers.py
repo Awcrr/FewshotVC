@@ -32,9 +32,9 @@ class Classifier(object):
         stats = 1. * hit / targets_val.shape[0] * 100.
         return stats
 
-class SmoothClassifier(Classifier):
+class LikelihoodClassifier(Classifier):
     def __init__(self, args):
-        super(SmoothClassifier, self).__init__(args)
+        super(LikelihoodClassifier, self).__init__(args)
         self.sigma = args.sigma
 
     def classify(self, val_dir, binary_train, targets_train, binary_val, targets_val):

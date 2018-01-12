@@ -4,7 +4,7 @@ import numpy as np
 from os import path
 from PIL import Image
 from torchvision import transforms
-from toolkit.pool3_converter import VGGPool3
+from vgg_pool3 import VGGPool3
 
 def create_refiner(args):
     print "=> Creating the {0}_Refiner".format(args.refine)
