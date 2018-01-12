@@ -11,5 +11,5 @@ python main.py \
     -refine Cosine \
     -least_cov 0.8 \
     -sigma 1.2 \
-    -classifier Smooth \
+    -classifier Likelihood \
     -record Path_to_save_the_records 
